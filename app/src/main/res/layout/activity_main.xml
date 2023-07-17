@@ -27,11 +27,13 @@
             android:hint="Num bomba"
             android:id="@+id/txtNumBomba"
             android:layout_marginTop="30dp"
+            android:inputType="number"
             ></EditText>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_gravity="center">
 
             <RadioButton
                 android:layout_width="120dp"
@@ -53,6 +55,7 @@
             android:layout_height="40dp"
             android:hint="Precio"
             android:id="@+id/txtPrecio"
+            android:inputType="numberDecimal"
             ></EditText>
         <EditText
             android:layout_width="match_parent"
@@ -60,6 +63,7 @@
             android:layout_marginTop="20dp"
             android:hint="Capacidad bomba"
             android:id="@+id/txtCapacidad"
+            android:inputType="number"
             ></EditText>
         <EditText
             android:layout_width="match_parent"
@@ -67,12 +71,14 @@
             android:layout_marginTop="20dp"
             android:hint="Contador litros"
             android:id="@+id/txtContador"
+            android:inputType="number"
             ></EditText>
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text="Iniciar bomba"
             android:id="@+id/btnIniciarBomba"
+            android:layout_gravity="center"
 
             >
         </Button>
@@ -82,6 +88,7 @@
             android:layout_marginTop="20dp"
             android:text="Ventas"
             android:textSize="30dp"
+
             android:textAlignment="center">
 
         </TextView>
@@ -91,12 +98,15 @@
             android:hint="Cantidad"
             android:inputType="number"
             android:id="@+id/txtCantidad"
+
             ></EditText>
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Hacer venta"
-            android:id="@+id/btnRealizarVenta">
+            android:id="@+id/btnRealizarVenta"
+            android:layout_gravity="center"
+            >
 
         </Button>
         <TextView
@@ -110,22 +120,24 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cantidad   Precio  Total a Pagar"
+            android:text=""
             android:textSize="20dp"
             android:textAlignment="center"
             android:id="@+id/lblResultado"
             ></TextView>
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Realizar la venta"
             android:id="@+id/btnRealizarVenta2"
+            android:layout_gravity="center"
             ></Button>
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Consultar registro de ventas"
             android:id="@+id/btnConsultar"
+            android:layout_gravity="center"
             ></Button>
 
         <LinearLayout
@@ -134,14 +146,14 @@
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:text="Limpiar"
-                android:layout_marginRight="150dp"
+                android:layout_marginRight="80dp"
                 android:id="@+id/btnLimpiar"/>
 
             <Button
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:text="Salir"
                 android:id="@+id/btnSalir"/>
@@ -152,4 +164,4 @@
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>onstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
